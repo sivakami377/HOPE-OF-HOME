@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Humanitarian Aid</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!--cdn icon link -->
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+body{
+  background-image:url("https://www.wvi.org/sites/default/files/styles/medium_landscape/public/2021-09/W005-0134-002-bw.jpg?itok=fBQCbFB0");
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+}
+header{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  box-shadow: 0 0 10px #000;
+  background: rgba(186, 182, 182, 0.5);
+}
+#chk1{
+  display:none;
+}
+i{
+  color:#fff;
+  cursor: pointer;
+}
+header .logo{
+  flex: 1;
+  color:#fff;
+  margin-left:50px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+
+header ul{
+  flex: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+header ul li{
+  list-style: none;
+}
+header ul li a{
+  text-decoration: none;
+  color: #fff1f1;
+  font-weight: 600;
+  
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+header ul li a:hover{
+  border-bottom: 2px solid gray;
+ 
+}
+
+header .menu{
+  font-size: 2.sem;
+  display: none;
+  
+  
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(90, 86, 86);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff ;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.container3{
+  background-color: dimgrey;
+}
+.container3.img{
+  
+  position: absolute;
+  right: 0px;
+  float: right;
+  top: 0px;
+  z-index: -1;
+    
+}
+.button {
+  background-color: #282b29; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button {font-size: 16px;}
+
+.button4{font-size: 10px;}
+* {
+  box-sizing: border-box;
+}
+.dropdown-content a:hover {background-color: rgb(147, 112, 112)}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+@media(max-width:1000px){
+   
+    header ul{
+        position: fixed;
+        top: 100px;
+        right: -100px;
+        height: calc(100vh - 100px);
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+    header .menu{
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+    }
+    @media(max-width:600px){
+        header .logo{
+            font-size: 10px;
+            margin-left: 8px;
+        }
+        header ul {
+            width: 100%;
+        }      
+     }
+}
+</style>
+</head>
+<body class="w3-grey">
+  <header>
+    <input type="checkbox" name="" id="chk1">
+    <div class="logo"><h1><i class="fas fa-dove"></i>Homes of Hope </h1></div>
+    
+    <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li class="dropdown">
+            <a href="DONATE1.html">DONATE</a>
+            <div class="dropdown-content">
+              <a href="Donate.html">Donate Financially</a>
+              <a href="donate2.html">Donate Goods In Kind</a>
+              
+            </div>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="login.html"  clss="active">Login</a></li>
+        <li>
+            <a href="https://www.facebook.com/homeofhopeindia/"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fhomeofhopeindia"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/indianorphanage/"><i class="fab fa-instagram"></i></a>
+        </li>
+       
+    </ul>
+    <div class="menu">
+        <label for="chk1">
+            <i class="fa fa-bars"></i>
+        </label>
+    </div>
+    </header><br><br><br><br><br>
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header1 class="w3-container w3-center w3-padding-32"> 
+  <h1 style="color: rgb(15, 15, 15);"><b>Humanitarian Aid!</b></h1>
+  <p style="color: rgb(18, 18, 18);">“For it is in giving that we receive.” ... </p>
+</header1>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="https://blogs.icrc.org/ilot/wp-content/uploads/sites/91/2018/07/Capture-987x620.jpg" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>What we do</b></h3>
+      
+    </div>
+
+    <div class="w3-container">
+      <p>We help people at the time of floods, fire, earthquakes, droughts and tsunamis, by providing people with food, clothes, cooking vessels, medicine and etc. We ship out containers filled with clothes and first aid boxes to distribute to those in need. We have distributed tons of rice to fire and flood victims. These natural calamities can impact a massive number of people and can leave many behind to starve. We are always here to receive any type of contribution from anywhere in the world, and to stand with victimised people immediately after a calamity happens.</p>
+     
+    </div>
+  </div>
+  <hr>
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="https://previews.123rf.com/images/bsd555/bsd5552005/bsd555200503323/148171181-participation-in-charity-black-glyph-icon-donate-to-foundation-humanitarian-aid-financial-support.jpg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>How you can help</b></h4>
+      <p>We have hundreds of children in need of sponsorship. You can help by sponsoring a child or children, or indeed your organisation or church could sponsor an orphanage.
+
+        Please help and sponsor a child or make a donation today. Alternatively, if your organisation wishes to sponsor an orphanage, please contact us for further details. Thank you.
+        
+        Your contribution will make a real difference:
+        
+        Not only do we have great hope to help significantly more orphans and needy children, we are obviously committed to the continuing care of our existing 5000+ children.
+        We need to distribute 1,700 kilos of rice per day in order to give our orphans and staff three meals a day, and 50,000 eggs per month. The costs of provisions increase year on year. There’s plenty of other types of food we need to provide too!
+        Also we have other needs to meet, such as medicine, staff salaries, education, maintenance of buildings and transportation. When the schools re-open in June, we will need to provide 50,000 note books and pens, and over 4,000 school bags and school dresses.</p>
+    </div>
+  </div><hr>
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+
+</body>
+</html>

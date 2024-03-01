@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Our home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!--cdn icon link -->
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+body{
+background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSu8iCjpI4nq2KnwWmD4xzIBpH42vg4Q7KsQ&usqp=CAU");
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+}
+header{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  box-shadow: 0 0 10px #000;
+  background: rgba(186, 182, 182, 0.5);
+}
+#chk1{
+  display:none;
+}
+i{
+  color:#fff;
+  cursor: pointer;
+}
+header .logo{
+  flex: 1;
+  color:#fff;
+  margin-left:50px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+
+header ul{
+  flex: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+header ul li{
+  list-style: none;
+}
+header ul li a{
+  text-decoration: none;
+  color: #fff1f1;
+  font-weight: 600;
+  
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+header ul li a:hover{
+  border-bottom: 2px solid gray;
+ 
+}
+
+header .menu{
+  font-size: 2.sem;
+  display: none;
+  
+  
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(90, 86, 86);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff ;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.container3{
+  background-color: dimgrey;
+}
+.container3.img{
+  
+  position: absolute;
+  right: 0px;
+  float: right;
+  top: 0px;
+  z-index: -1;
+    
+}
+.button {
+  background-color: #282b29; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button {font-size: 16px;}
+
+.button4{font-size: 10px;}
+* {
+  box-sizing: border-box;
+}
+.dropdown-content a:hover {background-color: rgb(147, 112, 112)}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+@media(max-width:1000px){
+   
+    header ul{
+        position: fixed;
+        top: 100px;
+        right: -100px;
+        height: calc(100vh - 100px);
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+    header .menu{
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+    }
+    @media(max-width:600px){
+        header .logo{
+            font-size: 10px;
+            margin-left: 8px;
+        }
+        header ul {
+            width: 100%;
+        }      
+     }
+}
+</style>
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="" id="chk1">
+        <div class="logo"><h1><i class="fas fa-dove"></i>Homes of Hope </h1></div>
+        
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li class="dropdown">
+                <a href="DONATE!.html">DONATE</a>
+                <div class="dropdown-content">
+                  <a href="Donate.html">Donate Financially</a>
+                  <a href="donate2.html">Donate Goods In Kind</a>
+                  
+                </div>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="login.html"  clss="active">Login</a></li>
+            <li>
+                <a href="https://www.facebook.com/homeofhopeindia/"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fhomeofhopeindia"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/indianorphanage/"><i class="fab fa-instagram"></i></a>
+            </li>
+           
+        </ul>
+        <div class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars"></i>
+            </label>
+        </div>
+        </header>
+
+ 
+<br><r><br><br>
+<!-- Header -->
+<header1 class="w3-container w3-center"style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo" style="background-color: #888686;">OUR HOME!.....!</h1>
+  <p class="w3-xlarge" style="background-color: #fff;">Meet the most amazing kids in the world...</p>
+</header1>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container" style="background-color: transparent;">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Childhood Fun</h1>
+     
+
+      <p class="w3-text-white">Play is a big part of what we do and we have large open areas where our children can always be found playing during 
+        their free periods. In the main building, that we call Strong House, we offer an extensive library of books that children love to read to 
+        each other or share with volunteers. We also have a computer lab that is available (with adult supervision) and a digital projector for 
+        night time movies. Beyond this, many children keep pets, especially dogs, chickens, cats and the occasional rabbit. They also enjoy 
+        maintaining their own vegetable gardens, fishing in the local river, as well as swimming in our pool during the hot summer months.</p>
+    </div>
+
+    <div class="w3-third w3-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoRtVAYljfM4Y4DN6ISwpRdu3Qc-b4P8UrZQ&usqp=CAU" style="height: 275px; width: 300px;">
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container" style="background-color: transparent;">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOPK_9Z_i7xdmqaWYucMajV7BPY0LyMzlqRA&usqp=CAU" style="height: 275px; width: 300px;">
+    </div>
+
+    <div class="w3-twothird">
+        <h1 class="w3-text-black">Education & Training</h1>
+      <p class="w3-text-white">One critical component of our Mission is education. The future success of our children depends on it. As a result, all Mission kids attend our school, The Maxton Strong School, recognized as one of the top learning centers in the area. The main language of study is English though they also study in Hindi: the official language of India.<br>
+
+        Though our school currently only operates up to grade 8, we make sure that all of our children are given the opportunity to complete their studies up to Grade 12 locally and then University after that. Our hope is that soon our school will receive its own registration to teach up to Grade 10 with a long-term vision to build a university campus right here on our grounds!
+       </p>
+    </div>
+  </div>
+</div>
+<!-- third Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container" style="background-color: transparent;">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1 class="w3-text-black">Our Kids Stories</h1>
+       
+  
+        <p class="w3-text-white">From time to time we write blog posts which share some of our kids stories; obviously we can not share all the details but here are a few that give a great idea of what our kids lives were and are like:</p>
+      </div>
+  
+      <div class="w3-third w3-center">
+          <img src="data:image/jpeg;base64,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" style="height: 250px;">
+      </div>
+    </div>
+  </div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Orphanages are the only places that ever left me feeling empty and full at the same time!......</h1>
+    <p style="text-align: center;"><a href="Donate.html"><button class="button button3">Donate Now</button></a></p>
+</div>
+
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

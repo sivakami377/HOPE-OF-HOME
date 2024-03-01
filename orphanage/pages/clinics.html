@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Free mobile medical clinics</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+body{
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://media.istockphoto.com/id/155139676/photo/silhouette-of-man-leaving-wheelchair-in-corridor-of-hospital.jpg?s=612x612&w=0&k=20&c=vMIiyfHoDbns_QXmMAkGJtOPM5vqvzdzwTEXJDQDVGQ=");
+  min-height: 75%;
+}
+
+header{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  box-shadow: 0 0 10px #000;
+  background: rgba(186, 182, 182, 0.5);
+}
+#chk1{
+  display:none;
+}
+i{
+  color:#fff;
+  cursor: pointer;
+}
+header .logo{
+  flex: 1;
+  color:#fff;
+  margin-left:50px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+
+header ul{
+  flex: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+header ul li{
+  list-style: none;
+}
+header ul li a{
+  text-decoration: none;
+  color: #fff1f1;
+  font-weight: 600;
+  
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+header ul li a:hover{
+  border-bottom: 2px solid gray;
+ 
+}
+
+header .menu{
+  font-size: 2.sem;
+  display: none;
+  
+  
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(90, 86, 86);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff ;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.button {
+  background-color: #282b29; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button {font-size: 16px;}
+
+.button4{font-size: 10px;}
+* {
+  box-sizing: border-box;
+}
+.dropdown-content a:hover {background-color: rgb(147, 112, 112)}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+@media(max-width:1000px){
+   
+    header ul{
+        position: fixed;
+        top: 100px;
+        right: -100px;
+        height: calc(100vh - 100px);
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+    header .menu{
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+    }
+    @media(max-width:600px){
+        header .logo{
+            font-size: 10px;
+            margin-left: 8px;
+        }
+        header ul {
+            width: 100%;
+        }      
+     }
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <input type="checkbox" name="" id="chk1">
+    <div class="logo"><h1><i class="fas fa-dove"></i>Homes of Hope </h1></div>
+    
+    <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li class="dropdown">
+            <a href="DONATE1.html">DONATE</a>
+            <div class="dropdown-content">
+              <a href="Donate.html">Donate Financially</a>
+              <a href="donate2.html">Donate Goods In Kind</a>
+              
+            </div>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="login.html"  clss="active">Login</a></li>
+        <li>
+            <a href="https://www.facebook.com/homeofhopeindia/"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fhomeofhopeindia"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/indianorphanage/"><i class="fab fa-instagram"></i></a>
+        </li>
+       
+    </ul>
+    <div class="menu">
+        <label for="chk1">
+            <i class="fa fa-bars"></i>
+        </label>
+    </div>
+    </header><br><br><br><br><br>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about" class="w3-black">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">What we do</span></h5>
+    <p>We provide medical care for those in need, including:<br>
+
+		1.Free mobile medical clinics<br>
+		2.In 2008 we launched the Free Medical Camps and Mobile Medical Clinic project, which consists of a medical doctor, two nurses, a supervisor, a driver, and an ambulance. This medical team provides free daily medical help for leper colonies, and visits poor villages, our orphanages and our handicapped home.<br>
+		3.Free artificial limbs and spectacles<br>
+		4.Helping to organise and run mega medical camps for free<br>
+		5.With cooperation from government officials, we help organise and run mega medical camps in which thousands of people are treated for free. (Over 7000 people received free medical assistance during the ‘Super Specialty Mega Free Medical Camp’ in which we participated.)</p>
+   
+    <img src="https://media.istockphoto.com/id/1130034198/photo/male-doctor-using-mobile-phone-at-hospital-medical-healthcare-and-doctor-service.jpg?s=612x612&w=0&k=20&c=7Fo_KwpkOsrPuJR7RrozLSYEYaTVCOtAP7QRPA5mqbs=" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> 24/7</p>
+  </div>
+</div>
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Our Goals</span></h5>
+    <img src="https://www.torton.com/cd-content/uploads/images/1487152728_dscn0027.jpg" class="w3-image" style="width:100%">
+	<p>We need to continue our important work to provide free medical assistance to needy people. We plan to:<br>
+
+		1.Setting up and running a 50 bed Grace Hospital in Khammam, India.<br>
+		2.Continue to provide free medical assistance to those in distant villages, those in our orphanages and in our handicapped home, with our mobile medical clinic.<br>
+		3.Continue to be involved with the organisation and running of mega medical camps.</p>
+    <p><strong>Reserve</strong> a table, ask for Medical requirements or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+
+</body>
+</html>

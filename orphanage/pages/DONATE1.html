@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Black Forest</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--cdn icon link -->
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body{
+    margin: 0px;
+    font-family: sans-serif;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRANu3ctweU7IEGTewUdoe2a0Lsw6KWcbVoag&usqp=CAU");
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: rgb(12, 12, 12);
+    padding: 20px;
+    margin-top: 20px;
+    width: 500px;
+  }
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+  }
+header{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  box-shadow: 0 0 10px #000;
+  background: rgba(186, 182, 182, 0.5);
+}
+#chk1{
+  display:none;
+}
+i{
+  color:#fff;
+  cursor: pointer;
+}
+header .logo{
+  flex: 1;
+  color:#fff;
+  margin-left:50px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+
+header ul{
+  flex: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+header ul li{
+  list-style: none;
+}
+header ul li a{
+  text-decoration: none;
+  color: #fff1f1;
+  font-weight: 600;
+  
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+header ul li a:hover{
+  border-bottom: 2px solid gray;
+ 
+}
+
+header .menu{
+  font-size: 2.sem;
+  display: none;
+  
+  
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(90, 86, 86);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff ;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.container3{
+  background-color: dimgrey;
+}
+.container3.img{
+  
+  position: absolute;
+  right: 0px;
+  float: right;
+  top: 0px;
+  z-index: -1;
+    
+}
+
+.button {
+  background-color: #282b29; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button {font-size: 16px;}
+
+.button4{font-size: 10px;}
+* {
+  box-sizing: border-box;
+}
+.dropdown-content a:hover {background-color: rgb(147, 112, 112)}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+@media(max-width:1000px){
+   
+    header ul{
+        position: fixed;
+        top: 100px;
+        right: -100px;
+        height: calc(100vh - 100px);
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+    header .menu{
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+    }
+    @media(max-width:600px){
+        header .logo{
+            font-size: 10px;
+            margin-left: 8px;
+        }
+        header ul {
+            width: 100%;
+        }      
+     }
+}
+
+</style>
+<body>
+    <header>
+        <input type="checkbox" name="" id="chk1">
+        <div class="logo"><h1><i class="fas fa-dove"></i>Homes of Hope </h1></div>
+        
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li class="dropdown">
+                <a href="DONATE1.html">DONATE</a>
+                <div class="dropdown-content">
+                  <a href="Donate.html">Donate Financially</a>
+                  <a href="donate2.html">Donate Goods In Kind</a>
+                  
+                </div>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="login.html"  clss="active">Login</a></li>
+            <li>
+                <a href="https://www.facebook.com/homeofhopeindia/"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fhomeofhopeindia"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/indianorphanage/"><i class="fab fa-instagram"></i></a>
+            </li>
+           
+        </ul>
+        <div class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars"></i>
+            </label>
+        </div>
+        </header><br><br><br><br><br>
+
+                    <!-- Grid -->
+  <div class="w3-row-padding" id="about">
+    <div class="w3-center w3-padding-64">
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4 w3-light-grey">
+        <div class="w3-container">
+            <h2 style="color: #000">Families For Children</h2><br>
+        <img src="https://lh3.googleusercontent.com/p/AF1QipNyECp9t_f7I6mA4uhjYjLZIVFUQ-0-Q52Tz9CM=s1360-w1360-h1020" alt="John" style="width:100%"><br><br>
+        
+          <p><i class="material-icons" style="color: #000;">edit_location</i>Address :<a href="https://www.google.com/maps/dir//Shop+No.107,+Vellalore+Road,+Podanur,+Near+GD+Water+Tank+Bus+Stop,+Coimbatore,+Tamil+Nadu+641023/@10.9579059,76.9065241,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba85a17bf0505ed:0x370005dc434643d5!2m2!1d76.988926!2d10.957917?entry=ttu" style="text-align: center;">
+                            
+            Families For Children, Shop No.107, Vellalore Road, Podanur, Near GD Water Tank Bus Stop, Coimbatore, Tamil Nadu 641023</a></p>
+            <p><i class="glyphicon glyphicon-envelope" style="color: #000;"></i>Email :<a href="http://www.familiesforchildren.ca/india.html">sandraffc2@gmail.com</a></p>
+            <p><i class="fas fa-phone" style="color: #000;"></i>Phone : <a href="#">8745859254</a></p>
+          <br><p style="text-align: center;"><a href="Donate.html"><button class="button button3" style="width: calc(50% - 10px);">Donate Financially</button></a><a href="donate2.html"><button class="button button3" style="width: calc(50% - 10px);">Donate Goods</button></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+        <div class="w3-card-4 w3-light-grey">
+          <div class="w3-container">
+              <h2 style="color: #000">Aravanaikkum Anbu Illam</h2><br>
+          <img src="https://lh3.googleusercontent.com/p/AF1QipOVJDzGmfzNmdpTVMDygFkOMaJnFP5NMzpalPBt=s1360-w1360-h1020" alt="John" style="width:100%"><br><br>
+          
+            <p><i class="material-icons" style="color: #000;">edit_location</i>Address :<a href="https://www.google.com/maps/place/Aravanaikkum+Anbu+Illam/@11.0237513,76.9901664,14z/data=!4m20!1m13!4m12!1m4!2m2!1d77.0219014!2d11.0052205!4e1!1m6!1m2!1s0x3ba8578eae839bf3:0x8676981535d09029!2sAravanaikkum+Anbu+Illam,+Gowthampuri+Lay-Out,+Near+E-2+Crime+Police+Station,+641004,+Peelamedu,+Gandhimaa+Nagar,+Tamil+Nadu+641004!2m2!1d77.00715!2d11.0386702!3m5!1s0x3ba8578eae839bf3:0x8676981535d09029!8m2!3d11.038672!4d77.0072232!16s%2Fg%2F11bz0y7qzh?entry=ttu" style="text-align: center;">
+                              
+                Gowthampuri Lay-Out, Near E-2 Crime Police Station, 641004, Peelamedu, Gandhimaa Nagar, Tamil Nadu 641004</a></p>
+              <p><i class="glyphicon glyphicon-envelope" style="color: #000;"></i>Email :<a href="https://www.bangaloreorphanage.com/">orphanage@gmail.com</a></p>
+              <p><i class="fas fa-phone" style="color: #000;"></i>Phone : <a href="#">9366753789</a></p>
+            <br><p style="text-align: center;"><a href="Donate.html"><button class="button button3" style="width: calc(50% - 10px);">Donate Financially</button></a><a href="donate2.html"><button class="button button3" style="width: calc(50% - 10px);">Donate Goods</button></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-card-4 w3-light-grey">
+          <div class="w3-container">
+              <h2 style="color: #000">Nizhal Charitable Trust</h2><br>
+          <img src="https://lh3.googleusercontent.com/p/AF1QipPFrDclgGJpNAx-hLOU6tbamhkA_p-O2IT_EmMB=s1360-w1360-h1020" alt="John" style="width:100%"><br><br>
+          
+            <p><i class="material-icons" style="color: #000;">edit_location</i>Address :<a href="https://www.google.com/maps/dir/11.0549682,76.9297728/No.5+-1,+Sri+Sabari+Garden+Krishna+Matriculation+School+Near,+to,+TVS+Nagar+-+Koundampalayam+Rd,+Saravana+Nagar,+Koundampalayam,+Coimbatore,+Tamil+Nadu+641025/@11.053452,76.8473753,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba858afb8467baf:0x9a209491f6f159ad!2m2!1d76.9297746!2d11.0534633?entry=ttu" style="text-align: center;">
+                              
+                Nizhal Charitable Trust,TVS Nagar - Koundampalayam Rd, Saravana Nagar, Koundampalayam, Coimbatore, Tamil Nadu 641025</a></p>
+              <p><i class="glyphicon glyphicon-envelope" style="color: #000;"></i>Email :<a href="http://www.nizhalcharitabletrust.org/contact-us.html">nizhalcharitabletrust@gmail.com</a></p>
+              <p><i class="fas fa-phone" style="color: #000;"></i>Phone : <a href="#">8745859254</a></p>
+            <br><p style="text-align: center;"><a href="Donate.html"><button class="button button3" style="width: calc(50% - 10px);">Donate Financially</button></a><a href="donate2.html"><button class="button button3" style="width: calc(50% - 10px);">Donate Goods</button></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-card-4 w3-light-grey">
+          <div class="w3-container">
+              <h2 style="color: #000">NACT Sevalayam</h2><br>
+          <img src="https://lh3.googleusercontent.com/p/AF1QipNmYH6w7GBjoKDZBe6EIGXBascxP0otRBtNRLNh=s1360-w1360-h1020" alt="John" style="width:100%"><br><br>
+          
+            <p><i class="material-icons" style="color: #000;">edit_location</i>Address :<a href="https://www.google.com/maps/dir//17,+Karai+Gowder+Layout,+Mappillai+Layout,+Kongu+Nagar,+Kalveerampalayam,+Coimbatore,+Tamil+Nadu+641046/@11.0288446,76.8062483,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba85f139699bdbd:0xe4cd39aedfb38ae4!2m2!1d76.8886502!2d11.0288557?entry=ttu" style="text-align: center;">
+                              
+                17, Karai Gowder Layout, Mappillai Layout, Kongu Nagar, Kalveerampalayam, Coimbatore, Tamil Nadu 641046</a></p>
+              <p><i class="glyphicon glyphicon-envelope" style="color: #000;"></i>Email :<a href="http://www.familiesforchildren.ca/india.html">NACTSevalayam@gmail.com</a></p>
+              <p><i class="fas fa-phone" style="color: #000;"></i>Phone : <a href="#">7696498756</a></p>
+            <br><p style="text-align: center;"><a href="Donate.html"><button class="button button3" style="width: calc(50% - 10px);">Donate Financially</button></a><a href="donate2.html"><button class="button button3" style="width: calc(50% - 10px);">Donate Goods</button></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-card-4 w3-light-grey">
+          <div class="w3-container">
+              <h2 style="color: #000">Elida Childrens Home</h2><br>
+          <img src="https://lh3.googleusercontent.com/p/AF1QipNyECp9t_f7I6mA4uhjYjLZIVFUQ-0-Q52Tz9CM=s1360-w1360-h1020" alt="John" style="width:100%"><br><br>
+          
+            <p><i class="material-icons" style="color: #000;">edit_location</i>Address :<a href="https://www.google.com/maps/dir//107,+Vellalore+Rd,+Railway+Colony+20+Blocks,+Podanur,+Tamil+Nadu+641023/@10.9606225,76.9080467,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba85a19cc0bb44d:0x4b5c4e3e57e2ac6d!2m2!1d76.9904486!2d10.9606336?entry=ttu" style="text-align: center;">
+                Elida Childrens Home, 107, Vellalore Rd, Railway Colony 20 Blocks, Podanur, Tamil Nadu 641023</a></p>
+              <p><i class="glyphicon glyphicon-envelope" style="color: #000;"></i>Email :<a href="http://www.familiesforchildren.ca/india.html">Elidachildrenhome@gmail.com</a></p>
+              <p><i class="fas fa-phone" style="color: #000;"></i>Phone : <a href="#">8745859254</a></p>
+            <br><p style="text-align: center;"><a href="Donate.html"><button class="button button3" style="width: calc(50% - 10px);">Donate Financially</button></a><a href="donate2.html"><button class="button button3" style="width: calc(50% - 10px);">Donate Goods</button></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-card-4 w3-light-grey">
+          <div class="w3-container">
+              <h2 style="color: #000">Little Sister Home</h2><br>
+          <img src="https://lh3.googleusercontent.com/p/AF1QipOM-tG_KjmDF88_C0V1y8g5XCMhv8a-OG1GIg_M=s1360-w1360-h1020" alt="John" style="width:100%"><br><br>
+          
+            <p><i class="material-icons" style="color: #000;">edit_location</i>Address :<a href="https://www.google.com/maps/dir//8QQV%2B7VV,+Kurumbadi,+Coonoor,+Tamil+Nadu+643104/@11.3382306,76.7122838,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba894932f403547:0x8194c7769ba8d069!2m2!1d76.794694!2d11.338273?entry=ttu" style="text-align: center;">
+                              
+                Little Sister Home, 8QQV+7VV, Kurumbadi, Coonoor, Tamil Nadu 643104</a></p>
+              <p><i class="glyphicon glyphicon-envelope" style="color: #000;"></i>Email :<a href="https://www.littlesistersofthepoorindia.org/where-are-we">littlesisterhome@gmail.com</a></p>
+              <p><i class="fas fa-phone" style="color: #000;"></i>Phone : <a href="#">9254436647</a></p>
+            <br><p style="text-align: center;"><a href="Donate.html"><button class="button button3" style="width: calc(50% - 10px);">Donate Financially</button></a><a href="donate2.html"><button class="button button3" style="width: calc(50% - 10px);">Donate Goods</button></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-card-4 w3-light-grey">
+          <div class="w3-container">
+              <h2 style="color: #000">Aadarana Home</h2><br>
+          <img src="https://lh3.googleusercontent.com/p/AF1QipOmO-NbitHHTGjaJ2D_dCkVqfydLfucbQj7VxBq=s1360-w1360-h1020" alt="John" style="width:100%"><br><br>
+          
+            <p><i class="material-icons" style="color: #000;">edit_location</i>Address :<a href="https://www.google.com/maps/dir//11-4-150%2F59,+Sri+Venkateshwara+Colony,+Saroornagar,+Hyderabad,+Telangana+500035/@17.3521912,78.4590041,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x3bcb9897b180f779:0x3420c69fab99805!2m2!1d78.5414059!2d17.3522081?entry=ttu" style="text-align: center;">
+                              
+                11-4-150/59, Sri Venkateshwara Colony, Saroornagar, Hyderabad, Telangana 500035</a></p>
+              <p><i class="glyphicon glyphicon-envelope" style="color: #000;"></i>Email :<a href="http://www.familiesforchildren.ca/india.html">Aadaranahome2@gmail.com</a></p>
+              <p><i class="fas fa-phone" style="color: #000;"></i>Phone : <a href="#">7789497590</a></p>
+            <br><p style="text-align: center;"><a href="Donate.html"><button class="button button3" style="width: calc(50% - 10px);">Donate Financially</button></a><a href="donate2.html"><button class="button button3" style="width: calc(50% - 10px);">Donate Goods</button></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-card-4 w3-light-grey">
+          <div class="w3-container">
+              <h2 style="color: #000">Anbarasi Social Action</h2><br>
+          <img src="https://lh3.googleusercontent.com/p/AF1QipMcMGt7aMHkRDoqkI2IuQrK3kLJwaWbnDxRD5Ya=s1360-w1360-h1020" alt="John" style="width:100%"><br><br>
+          
+            <p><i class="material-icons" style="color: #000;">edit_location</i>Address :<a href="https://www.google.com/maps/dir//19+Karur+Road,+Kothampatti+Pirivu,+Nandavanapatty,+Dindigul,+Tamil+Nadu+624001/@10.3834157,77.9115538,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3b00aa72f77668c9:0x4562f270cfbb011!2m2!1d77.9939545!2d10.3834174?entry=ttu" style="text-align: center;">
+                              
+                Anbarasi Social Action, 19 Karur Road, Kothampatti Pirivu, Nandavanapatty, Dindigul, Tamil Nadu 624001</a></p>
+              <p><i class="glyphicon glyphicon-envelope" style="color: #000;"></i>Email :<a href="http://www.familiesforchildren.ca/india.html">Anbarasi@gmail.com</a></p>
+              <p><i class="fas fa-phone" style="color: #000;"></i>Phone : <a href="#">4567948390</a></p>
+            <br><p style="text-align: center;"><a href="Donate.html"><button class="button button3" style="width: calc(50% - 10px);">Donate Financially</button></a><a href="donate2.html"><button class="button button3" style="width: calc(50% - 10px);">Donate Goods</button></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-third w3-margin-bottom">
+        <div class="w3-card-4 w3-light-grey">
+          <div class="w3-container">
+              <h2 style="color: #000">Balagurukulam Orphanage</h2><br>
+          <img src="https://lh3.googleusercontent.com/p/AF1QipPtsTb-dT558vocAYTnX0AOTjhQPmfF-3doQqva=s1360-w1360-h10206" alt="John" style="width:100%"><br><br>
+          
+            <p><i class="material-icons" style="color: #000;">edit_location</i>Address :<a href="https://www.google.com/maps/dir//No+13+angels+orphanage+Anatha+ashram+compound,+Bengaluru,+Karnataka+560051/@12.9870183,77.5178265,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae17a0fc82f373:0x54a73c09252300dd!2m2!1d77.6002316!2d12.9870394?entry=ttu" style="text-align: center;">
+                              
+                Angels orphanage Bengaluru, No 13 angels orphanage Anatha ashram compound, Bengaluru, Karnataka 560051</a></p>
+              <p><i class="glyphicon glyphicon-envelope" style="color: #000;"></i>Email :<a href="http://www.familiesforchildren.ca/india.html">Balagurukulam@gmail.com</a></p>
+              <p><i class="fas fa-phone" style="color: #000;"></i>Phone : <a href="#">5678937490</a></p>
+            <br><p style="text-align: center;"><a href="Donate.html"><button class="button button3" style="width: calc(50% - 10px);">Donate Financially</button></a><a href="donate2.html"><button class="button button3" style="width: calc(50% - 10px);">Donate Goods</button></a></p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+                        
+               
+                
+ 
+</body>
+</html>
+      
+      
+  
+  

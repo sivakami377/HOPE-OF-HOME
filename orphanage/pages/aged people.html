@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Homes for the Aged</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!--cdn icon link -->
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+body{
+  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgH13fcfDbsl8iRhPCz31ln5LPMDl8g2yLFQ&usqp=CAU");
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+}
+
+header{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  box-shadow: 0 0 10px #000;
+  background: rgba(186, 182, 182, 0.5);
+}
+#chk1{
+  display:none;
+}
+i{
+  color:#fff;
+  cursor: pointer;
+}
+header .logo{
+  flex: 1;
+  color:#fff;
+  margin-left:50px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+
+header ul{
+  flex: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+header ul li{
+  list-style: none;
+}
+header ul li a{
+  text-decoration: none;
+  color: #fff1f1;
+  font-weight: 600;
+  
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+header ul li a:hover{
+  border-bottom: 2px solid gray;
+ 
+}
+
+header .menu{
+  font-size: 2.sem;
+  display: none;
+  
+  
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(90, 86, 86);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff ;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.container3{
+  background-color: dimgrey;
+}
+.container3.img{
+  
+  position: absolute;
+  right: 0px;
+  float: right;
+  top: 0px;
+  z-index: -1;
+    
+}
+.button {
+  background-color: #282b29; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button {font-size: 16px;}
+
+.button4{font-size: 10px;}
+* {
+  box-sizing: border-box;
+}
+.dropdown-content a:hover {background-color: rgb(147, 112, 112)}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+@media(max-width:1000px){
+   
+    header ul{
+        position: fixed;
+        top: 100px;
+        right: -100px;
+        height: calc(100vh - 100px);
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+    header .menu{
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+    }
+    @media(max-width:600px){
+        header .logo{
+            font-size: 10px;
+            margin-left: 8px;
+        }
+        header ul {
+            width: 100%;
+        }      
+     }
+}
+</style>
+</head>
+<body class="w3-grey">
+  <header>
+    <input type="checkbox" name="" id="chk1">
+    <div class="logo"><h1><i class="fas fa-dove"></i>Homes of Hope </h1></div>
+    
+    <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li class="dropdown">
+            <a href="DONATE1.html">DONATE</a>
+            <div class="dropdown-content">
+              <a href="Donate.html">Donate Financially</a>
+              <a href="donate2.html">Donate Goods In Kind</a>
+              
+            </div>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="login.html"  clss="active">Login</a></li>
+        <li>
+            <a href="https://www.facebook.com/homeofhopeindia/"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fhomeofhopeindia"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/indianorphanage/"><i class="fab fa-instagram"></i></a>
+        </li>
+       
+    </ul>
+    <div class="menu">
+        <label for="chk1">
+            <i class="fa fa-bars"></i>
+        </label>
+    </div>
+    </header><br><br><br><br><br>
+
+</style>
+</head>
+<body class="w3-grey">
+	
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header1 class="w3-container w3-center w3-padding-32"> 
+  <h1 style="color: aliceblue;"><b>Homes for the Aged!</b></h1>
+  <p style="color: aliceblue;">“For it is in giving that we receive.” ... </p>
+</header1>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="https://img.freepik.com/premium-photo/old-people-sitting-nursing-home-old-age-helplessness-caring-old-people-deserved-rest-retirement-help-support-rehabilitation-healing-retirement-physiotherapy-healthcare_771426-11587.jpg?w=2000" alt="Nature" style="width:100%">
+    <div class="w3-container">
+      <h3><b>What we do</b></h3>
+      
+    </div>
+
+    <div class="w3-container">
+      <p>In 2004 on the outskirts of the famous city ‘Bhadrachalam’ on a plot of one acre, we built a Grace Aged Home for destitute and elderly people. On the first day, 21 people joined this home; currently, we are taking care of over 50 elderly men and women. When individuals come to Grace Home, we take care of all their needs.</p>
+     
+    </div>
+  </div>
+  <hr>
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="https://cdn.pixabay.com/photo/2017/05/08/07/32/women-2294648_640.jpg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>How you can help</b></h4>
+      <p>Our Grace Aged Home is purely run by generous contributions; we do not have any permanent resources for this project or financial support from the government. Please help us to continue to take care of these aged people.
+
+        Please make a donation today and make a difference to lives of these aged people. Thank you
+        
+        Your contribution will make a real difference:
+        
+        To maintain this home and support over 50 people, it costs £737 / $1200 /€1000 per month. We have fairly low maintenance costs, but we need basics such as food, medicine, electric bills, and three people voluntarily working for honorarium.
+        </p>
+    </div>
+  </div><hr>
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

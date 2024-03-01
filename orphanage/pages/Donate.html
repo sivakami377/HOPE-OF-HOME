@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Donate Financially</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!--cdn icon link -->
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTraLZOgccL3K179md4xSeAVkd9Vs80O56I5A&usqp=CAU');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}.donation-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #605a5a;
+      color:aliceblue;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .donation-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .donation-form input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #111010;
+      border-radius: 5px;
+    }
+    .donate-button {
+      margin-top: 10px;
+    }
+    header{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  box-shadow: 0 0 10px #000;
+  background: rgba(186, 182, 182, 0.5);
+}
+#chk1{
+  display:none;
+}
+i{
+  color:#fff;
+  cursor: pointer;
+}
+header .logo{
+  flex: 1;
+  color:#fff;
+  margin-left:50px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+
+header ul{
+  flex: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+header ul li{
+  list-style: none;
+}
+header ul li a{
+  text-decoration: none;
+  color: #fff1f1;
+  font-weight: 600;
+  
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+header ul li a:hover{
+  border-bottom: 2px solid gray;
+ 
+}
+
+header .menu{
+  font-size: 2.sem;
+  display: none;
+  
+  
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(90, 86, 86);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff ;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.container3{
+  background-color: dimgrey;
+}
+.container3.img{
+  
+  position: absolute;
+  right: 0px;
+  float: right;
+  top: 0px;
+  z-index: -1;
+    
+}
+.button {
+  background-color: #282b29; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button {font-size: 16px;}
+
+.button4{font-size: 10px;}
+* {
+  box-sizing: border-box;
+}
+.dropdown-content a:hover {background-color: rgb(147, 112, 112)}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+@media(max-width:1000px){
+   
+    header ul{
+        position: fixed;
+        top: 100px;
+        right: -100px;
+        height: calc(100vh - 100px);
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+    header .menu{
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+    }
+    @media(max-width:600px){
+        header .logo{
+            font-size: 10px;
+            margin-left: 8px;
+        }
+        header ul {
+            width: 100%;
+        }      
+     }
+}
+
+
+
+    
+</style>
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="" id="chk1">
+        <div class="logo"><h1><i class="fas fa-dove"></i>Homes of Hope </h1></div>
+        
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li class="dropdown">
+                <a href="DONATE1.html">DONATE</a>
+                <div class="dropdown-content">
+                  <a href="Donate.html">Donate Financially</a>
+                  <a href="donate2.html">Donate Goods In Kind</a>
+                  
+                </div>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="login.html"  clss="active">Login</a></li>
+            <li>
+                <a href="https://www.facebook.com/homeofhopeindia/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fhomeofhopeindia"><i class="fab fa-twitter"></i></a>
+                <a href="https://twitter.com/indianorphanage"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/indianorphanage/"><i class="fab fa-instagram"></i></a>
+            </li>
+           
+        </ul>
+        <div class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars"></i>
+            </label>
+        </div>
+        </header>
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+  </div>
+  
+  <div class="w3-display-topmiddle w3-container" style="margin: 10px;padding: 8%;">
+    <p class="w3-xlarge">Help us to change lives!</p><br><br><br><br><br><br><br><br><br></div>
+    <div class="w3-display-bottommiddle w3-container">
+    <p class="w3-large">Thanks very much for your interest in supporting us financially by donating to our organization. Our preferred method is to have donations come through the US based non-profit Global Giving. You can donate there through credit card, Paypal and a variety of other options. You can also set up monthly donation options if you would like. Please click the link below to donate.
+
+    </p>
+    <p><button onclick="document.getElementById('donate').style.display='block'" class="w3-button w3-black" style="font-size: 50px; width: 100%;">donate</button></p>
+  </div>
+</div>
+
+
+
+<!-- donate Modal -->
+<div id="donate" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('donate').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Donate</h1>
+    </div>
+    <div class="container">
+        <div class="donation-container">
+          <h2 class="donation-title">Support Our Charity</h2>
+          <p>Help us make a difference in the lives of those in need.</p>
+          <p>Your donation will directly impact our projects and initiatives.</p>
+          
+          <form id="donationForm">
+            <div class="form-group">
+              <label for="amount">Donation Amount ($)</label>
+              <input type="number" class="form-control" id="amount" name="amount" step="1" min="1" required>
+            </div>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <button type="button" class="btn btn-primary donate-button" onclick="submitDonation()">Donate Now</button>
+          </form>
+          
+          <div id="donationResult" class="mt-3"></div>
+        </div>
+      </div>
+  </div>
+</div>
+<script>
+    function submitDonation() {
+      const amount = document.getElementById("amount").value;
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+
+      const donationResult = document.getElementById("donationResult");
+      donationResult.innerHTML = `
+        <div class="alert alert-success">
+          Thank you, ${name}, for your generous donation of $${amount}!
+          We will send a confirmation email to ${email}.
+        </div>
+        `;
+
+      // You can add actual donation processing logic here
+    }
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

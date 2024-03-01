@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Our Farm</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!--cdn icon link -->
+        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+body{
+ background-image: url("data:image/jpeg;base64,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");
+background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+}
+header{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  box-shadow: 0 0 10px #000;
+  background: rgba(186, 182, 182, 0.5);
+}
+#chk1{
+  display:none;
+}
+i{
+  color:#fff;
+  cursor: pointer;
+}
+header .logo{
+  flex: 1;
+  color:#fff;
+  margin-left:50px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+
+header ul{
+  flex: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+header ul li{
+  list-style: none;
+}
+header ul li a{
+  text-decoration: none;
+  color: #fff1f1;
+  font-weight: 600;
+  
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+header ul li a:hover{
+  border-bottom: 2px solid gray;
+ 
+}
+
+header .menu{
+  font-size: 2.sem;
+  display: none;
+  
+  
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(90, 86, 86);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff ;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.container3{
+  background-color: dimgrey;
+}
+.container3.img{
+  
+  position: absolute;
+  right: 0px;
+  float: right;
+  top: 0px;
+  z-index: -1;
+    
+}
+.button {
+  background-color: #282b29; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button {font-size: 16px;}
+
+.button4{font-size: 10px;}
+* {
+  box-sizing: border-box;
+}
+.dropdown-content a:hover {background-color: rgb(147, 112, 112)}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+@media(max-width:1000px){
+   
+    header ul{
+        position: fixed;
+        top: 100px;
+        right: -100px;
+        height: calc(100vh - 100px);
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+    header .menu{
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+    }
+    @media(max-width:600px){
+        header .logo{
+            font-size: 10px;
+            margin-left: 8px;
+        }
+        header ul {
+            width: 100%;
+        }      
+     }
+}
+</style>
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="" id="chk1">
+        <div class="logo"><h1><i class="fas fa-dove"></i>Homes of Hope </h1></div>
+        
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li class="dropdown">
+                <a href="DONATE1.html">DONATE</a>
+                <div class="dropdown-content">
+                  <a href="Donate.html">Donate Financially</a>
+                  <a href="donate2.html">Donate Goods In Kind</a>
+                  
+                </div>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="login.html"  clss="active">Login</a></li>
+            <li>
+                <a href="https://www.facebook.com/homeofhopeindia/"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fhomeofhopeindia"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/indianorphanage/"><i class="fab fa-instagram"></i></a>
+            </li>
+           
+        </ul>
+        <div class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars"></i>
+            </label>
+        </div>
+        </header>
+
+ 
+<br><r><br><br>
+<!-- Header -->
+<header1 class="w3-container w3-center"style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo" >Agricultural Projects</h1>
+  <p class="w3-xlarge" style="background-color: #fff;">There's a reason it's in our name...</p>
+</header1>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container" style="background-color: transparent;">
+  <div class="w3-content"><br><br><br>
+    <div class="w3-twothird">
+     
+
+      <p class="w3-text-black"><br><br><br>Our agricultural projects play a big part in why we are able to do so much on such a small budget. Not only do we grow much of our own food (we even make our own cooking oil), but we also are able to sell excess production to generate much needed funds that can then be channeled into other areas. In this last year almost all of our day to day expenses, including our staff and workers salaries were paid for by our agriculture department through the sale of various produce.</p>
+    </div>
+
+    <div class="w3-third w3-center">
+        <img src="https://indianorphanage.com/io/wp-content/uploads/2020/05/indian-orphanage-children-0619-800x533.jpg" style="height: 250px; width: 300px;">
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container" style="background-color: gray;">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+        <img src="https://indianorphanage.com/io/wp-content/uploads/2023/07/20230410_CSS6405-800x533.jpg" style="height: 275px; width: 300px;">
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Main Farm / General Crops</h1>
+      <p class="w3-text-white">We are fortunate to have a decent amount of land (about 50 acres) in which we can grow crops. We grow a multitude of things through the year but our main crops are sugar cane, wheat and paddy (rice). We are normally able to get two separate rice crops in each year, one crop of wheat and the cane runs all year. As well as this we grow a lot of mustard, dhal (lentils) and soybean. Our farm is managed by a team of people and is a hive of activity every day.
+
+       </p>
+    </div>
+  </div>
+</div>
+<!-- third Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container" style="background-color: transparent;">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>Dairy</h1>
+        <p class="w3-text-black">
+          We have around 45 cattle in our dairy which are raised to produce milk for our children; those who don’t drink milk get it in their morning porridge and chai (tea) throughout the day. All of our impregnation is done by a local vet artificially. Our milk production is quite good and extremely cost effective and the nutritional value for our children is obvious.</p>
+      </div>
+  
+      <div class="w3-third w3-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuzzGyLBNjoCKxQ5M2YKfjydheyzzxmvEl3w&usqp=CAU" style="height: 250px;">
+      </div>
+    </div>
+  </div>
+<!-- fouth Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container" style="background-color: gray;">
+    <div class="w3-content">
+      <div class="w3-third w3-center">
+          <img src="https://indianorphanage.com/io/wp-content/uploads/2020/05/indian-orphanage-children-3143-800x533.jpg" style="height: 275px; width: 300px;">
+      </div>
+  
+      <div class="w3-twothird">
+        <h1>Tanakpur Property</h1>
+        <p class="w3-text-white"> We have another section of land that we have access to that is located in Tanakpur, a small town about 12km away from our main compound. This property was previously used to run a school but it was closed down over a decade ago. Since that time, the property has been mostly un-utilized and so we have started using it to grow produce such as fresh vegetables, dhal and wheat.<br>
+
+          There are major problems with rogue cattle, pigs and monkeys raiding crops, but even though the returns are minimal they are still returns. Our hope is that we will be able to develop the property in the future in a way in which it can be utilized to its maximum potential.
+         </p>
+      </div>
+    </div>
+  </div>
+  <!-- fifth Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container" style="background-color: transparent;">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>Tractors & Machinery</h1>
+        <p class="w3-text-black">
+          Our three tractors are kept busy throughout the year with an array of machinery -much of which we make ourselves here in our workshop! Some of our income is generated as a result of sending these vehicles out into the local market on hire. As more and more farms and orchards in our area are turning towards mechanized agricultural practice we are able to use the literal tools we have at hand to help with our goal of self-sustainable living.
+        </p>
+      </div>
+  
+      <div class="w3-third w3-center">
+          <img src="https://indianorphanage.com/io/wp-content/uploads/2020/05/indian-orphanage-children-1258-1-800x533.jpg" style="height: 250px;">
+      </div>
+    </div>
+  </div>
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Orphanages are the only places that ever left me feeling empty and full at the same time!......</h1>
+    
+    <p style="text-align: center;"><a href="Donate.html"><button class="button button3">Donate Now</button></a></p>
+</div>
+
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
